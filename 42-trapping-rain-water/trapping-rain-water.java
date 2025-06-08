@@ -7,11 +7,9 @@ class Solution {
 
        int max=nums[0];
        pref[0]=0;
-        System.out.print(pref[0]+ " ");
 
        for(int i=1;i<n;i++){
         pref[i]=max;
-        System.out.print(pref[i]+ " ");
         if(nums[i]>max) max=nums[i];
         
        }
