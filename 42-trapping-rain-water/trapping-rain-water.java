@@ -5,19 +5,18 @@ class Solution {
        int[]pref=new int[n];
        int[]suff=new int[n];
 
-       int max=nums[0];
-       pref[0]=0;
+       int max=0;
+       
 
-       for(int i=1;i<n;i++){
+       for(int i=0;i<n;i++){
         pref[i]=max;
         if(nums[i]>max) max=nums[i];
         
        }
 
-        max=nums[n-1];
-        suff[n-1]=0;
+        max=0;
 
-        for(int i=n-2;i>=0;i--){
+        for(int i=n-1;i>=0;i--){
             suff[i]=max;
         if(nums[i]>max) max=nums[i];
 
