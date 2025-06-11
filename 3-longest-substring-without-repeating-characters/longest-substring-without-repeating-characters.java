@@ -6,7 +6,7 @@ while (right < s.length()) {
     if (!hashSet.contains(s.charAt(right))) {
        hashSet.add(s.charAt(right));
        right++;
-       max = Math.max(hashSet.size(), max);
+       max = Math.max(right-left, max);
      } else {
         hashSet.remove(s.charAt(left));
         left++;
